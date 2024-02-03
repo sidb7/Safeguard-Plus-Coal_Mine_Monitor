@@ -1,0 +1,322 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Client 1</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+  <style>
+    * {
+      padding: 0px;
+      margin: 0px;
+      box-sizing: border-box;
+      font-family: sans-serif;
+    }
+
+    body {
+      background: rgb(31, 31, 31);
+
+      height: 100vh;
+
+    }
+
+    .num {
+      font-weight: 400;
+      color: rgb(251, 247, 247);
+    }
+
+    .box {
+      border: 3px solid rgb(31, 31, 31);
+      background-color: rgba(104, 101, 101, 0.705);
+      border-radius: 10px;
+    }
+
+    * {
+      margin: 0px;
+      padding: 0px;
+    }
+  </style>
+
+</head>
+<body class="container-fluid">
+
+  <div class="row ">
+    <nav class="navbar navbar-expand-lg ">
+      <div class="container-fluid">
+        <div class="collapse navbar-collapse d-flex justify-content-center p-2" id="navbarNavAltMarkup">
+          <div class="navbar-nav ">
+            <div class="row">
+              <div class="col-12 fs-2 d-flex justify-content-center mb-3 "
+                style=" color: aliceblue; border: 2px solid coral;border-radius: 20px;">DASHBOARD CLIENT 1</div>
+              <div class="row d-flex justify-content-center">
+                <a class="btn num m-2 col-1" style="background-color: rgba(104, 101, 101, 0.705);width: fit-content;"
+                  href="http://192.168.0.100/" role="button">Client 1</a>
+                <a class="btn num m-2 col-1" style="background-color: rgba(104, 101, 101, 0.705);width: fit-content ;"
+                  href="http://192.168.0.101/ " target="_blank" role="button">Client 2</a>
+                <a class="btn num m-2 col-1" style="background-color: rgba(104, 101, 101, 0.705);width: fit-content ;"
+                  href="#" role="button">Client 3</a>
+                <a class="btn num m-2 col-1" style="background-color: rgba(104, 101, 101, 0.705);width: fit-content ;"
+                  href="#" role="button">Client 4</a>
+                <a class="btn num m-2 col-1" style="background-color: rgba(104, 101, 101, 0.705);width: fit-content ;"
+                  href="#" role="button">Client 5</a>
+                <a class="btn num m-2 col-1" style="background-color: rgba(104, 101, 101, 0.705);width: fit-content ;"
+                  href="#" role="button">Client 6</a>
+                <a class="btn num m-2 col-1" style="background-color: rgba(104, 101, 101, 0.705);width: fit-content ;"
+                  href="#" role="button">Client 7</a>
+                <a class="btn num m-2 col-1" style="background-color: rgba(104, 101, 101, 0.705);width: fit-content ;"
+                  href="#" role="button">Client 8</a>
+                <a class="btn num m-2 col-1" style="background-color: rgba(104, 101, 101, 0.705);width: fit-content ;"
+                  href="#" role="button">Client 9</a>
+                <a class="btn num m-2 col-1" style="background-color: rgba(104, 101, 101, 0.705);width: fit-content;"
+                  href="#" role="button">Client 10</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </div>
+  <!-- ............................................................................................................ -->
+
+  <div class="row " style="margin-top: 50px;">
+    <div class="col-xl-4 col-lg-4 box  d-flex  justify-content-center">
+      <div class="row  ">
+        <div class="col-12 d-flex  justify-content-center">
+
+          <div class="mycan1 num justify-content-center pb-4 d-flex fs-5" > </div>
+         
+
+        </div>
+        <div class="col-12 num justify-content-center pb-4 d-flex fs-5">BPM</div>
+      </div>
+
+    </div>
+
+
+    <div class="col-xl-4 col-lg-4 box  d-flex justify-content-center align-content-center">
+      <div class="row">
+        <div class="col-12 d-flex  justify-content-center">
+
+          <canvas class="myCanvas2" width="200" height="300"></canvas>
+        </div>
+        <div class="col-12 num justify-content-center pb-4 d-flex fs-5">HUMIDITY</div>
+
+      </div>
+    </div>
+
+
+    <div class="col-xl-4 col-lg-4 box  d-flex justify-content-center align-content-center">
+      <div class="row">
+        <div class="col-12 d-flex  justify-content-center">
+          <canvas id="myCanvas3" width="200" height="300"></canvas>
+
+        </div>
+        <div class="col-12 num justify-content-center pb-4 d-flex fs-5">TEMPERATURE</div>
+
+      </div>
+    </div>
+
+  </div>
+
+   <!-- ............................................................................................................ -->
+
+  <div class="row box">
+
+    <div class="col-12 pt-5 pb-3    d-flex justify-content-center p-3 align-content-center">
+      <div class="progress  " style="height: 30px ; width: 50%;  background-color: rgb(50, 49, 49);">
+        <div class="progress-bar  " id="barr" role="progressbar" style="width: 0%; background-color: rgb(230, 106, 61);"
+          aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
+      </div>
+    </div>
+
+    <div class="col-12 fs-5 d-flex pb-4 justify-content-center num"> GAS</div>
+
+  </div>
+
+   <!-- ............................................................................................................ -->
+
+  <script>
+    var getHR = 0; 
+    var dhthum =  0;
+    var dhttemp = 0;
+    var gasmq2 = 0;
+
+window.onload = function()
+{
+    loaddata();
+};
+    
+function loaddata()
+{
+    var url = "https://sid-b7dd-123-44-435.loca.lt/alltasks";
+    $.getJSON(url,function(data)
+    {
+        var val = data;
+        console.log(val);
+        if((val[Object.keys(data).length - 1 ]['client'])==="1")
+        {
+         dhthum =  (val[Object.keys(data).length - 1 ]['humidity']); 
+         dhttemp =  (val[Object.keys(data).length - 1 ]['temperature']); 
+         getHR =  (val[Object.keys(data).length - 1 ]['temperature']); 
+         document.querySelector(".mycan1").innerHTML = `${getHR}`;}
+    });
+}
+
+
+
+    var myVar = setInterval(function(){
+        loaddata();
+    }, 1000); 
+    
+
+
+
+    
+
+   
+    //----------------------------------------------------------------------------------------------------------------
+    // Source: https://www.tothenew.com/blog/tutorial-to-create-a-circular-progress-bar-with-canvas/
+    //-----------------------------------------------------------------------------------------------------------------
+   
+
+    //........................................................................................................................
+    var ctx1 = document.querySelector('.myCanvas2');
+    var context1 = ctx1.getContext('2d');
+    var start1 = 1.58;
+    var cw1 = context1.canvas.width / 2;
+    var ch1 = context1.canvas.height / 2;
+    var diff1;
+
+    var cnt1 = 0;
+    var bar1 = setInterval(progressBar1, 10);
+    function progressBar1() {
+      var HR1 = map(dhthum, 0, 200, 0, 100);
+      diff1 = (cnt1 / 100) * Math.PI * 2;
+
+      context1.clearRect(0, 0, 400, 200);
+      context1.beginPath();
+      context1.arc(cw1, ch1, 80, 0, 2 * Math.PI, false);
+      context1.fillStyle = '#585555';
+      context1.fill();
+      context1.strokeStyle = 'rgb(50, 49, 49)';
+      if (dhthum <= 100) {
+
+        context1.stroke();
+        context1.fillStyle = '#FFF';
+        context1.strokeStyle = 'rgb(230, 106, 61)';
+        context1.textAlign = 'center';
+        context1.lineWidth = 15;
+        context1.font = '15pt Verdana';
+        context1.beginPath();
+        context1.arc(cw1, ch1, 80, start1, diff1 + start1, false);
+        context1.stroke();
+        context1.fillText(dhthum + ' %', cw1 + 2, ch1 + 6);
+
+      }
+      else {
+        context1.stroke();
+        context1.fillStyle = '#FFF';
+        context1.strokeStyle = '#F30000';
+        context1.textAlign = 'center';
+        context1.lineWidth = 15;
+        context1.font = '15pt Verdana';
+        context1.beginPath();
+        context1.arc(cw1, ch1, 80, start1, diff1 + start1, false);
+        context1.stroke();
+        context1.fillText(dhthum + ' %', cw1 + 2, ch1 + 6);
+      }
+
+      if (cnt1 < HR1) {
+        cnt1++;
+
+      }
+
+      if (cnt1 > HR1) {
+        cnt1--;
+      }
+
+    }
+    //...................................................
+    var ctx2 = document.getElementById('myCanvas3');
+    var context2 = ctx2.getContext('2d');
+    var start2 = 1.58;
+    var cw2 = context2.canvas.width / 2;
+    var ch2 = context2.canvas.height / 2;
+    var diff2;
+
+    var cnt2 = 0;
+    var bar2 = setInterval(progressBar2, 10);
+    function progressBar2() {
+      var HR2 = map(dhttemp, 0, 200, 0, 100);
+      diff2 = (cnt2 / 100) * Math.PI * 2;
+
+      context2.clearRect(0, 0, 400, 200);
+      context2.beginPath();
+      context2.arc(cw2, ch2, 80, 0, 2 * Math.PI, false);
+      context2.fillStyle = '#585555';
+      context2.fill();
+      context2.strokeStyle = 'rgb(50, 49, 49)';
+      if (dhttemp <= 100) {
+        context2.stroke();
+        context2.fillStyle = '#FFF';
+        context2.strokeStyle = 'rgb(230, 106, 61)';
+        context2.textAlign = 'center';
+        context2.lineWidth = 15;
+        context2.font = '15pt Verdana';
+        context2.beginPath();
+        context2.arc(cw2, ch2, 80, start2, diff2 + start2, false);
+        context2.stroke();
+        context2.fillText(dhttemp + ' °C', cw2 + 2, ch2 + 6);
+      }
+      else {
+        context2.stroke();
+        context2.fillStyle = '#FFF';
+        context2.strokeStyle = '#F30000';
+        context2.textAlign = 'center';
+        context2.lineWidth = 15;
+        context2.font = '15pt Verdana';
+        context2.beginPath();
+        context2.arc(cw2, ch2, 80, start2, diff2 + start2, false);
+        context2.stroke();
+        context2.fillText(dhttemp + ' °C', cw2 + 2, ch2 + 6);
+      }
+
+      if (cnt2 < HR2) {
+        cnt2++;
+      }
+
+      if (cnt2 > HR2) {
+        cnt2--;
+      }
+      
+      document.getElementById("barr").style.width = gasmq2 + "%";
+      
+      if (gasmq2 > 50) {
+       
+        document.getElementById("barr").style.backgroundColor = '#F30000';
+        document.getElementById("barr").innerHTML = "GAS LEVEL HIGH";
+      }
+      else{
+        document.getElementById("barr").style.backgroundColor = 'rgb(230, 106, 61)';
+      }
+    
+    }
+
+    //------------------------------------------------------------
+
+    //------------------------------------------------------------
+    // The value is min = 0 and max = 200 is scaled to the Progress bar value min = 0 and max = 100.
+   
+    function map(x, in_min, in_max, out_min, out_max) {
+      return (x - in_min) * (out_max - out_min) / (in_max - in_min) + out_min;
+    }
+    //------------------------------------------------------------
+
+  </script>
+</body>
+
+</html>
